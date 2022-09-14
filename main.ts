@@ -10,6 +10,15 @@ input.onButtonPressed(Button.A, function () {
         basic.showString("Hello!")
     }
 })
+input.onGesture(Gesture.Shake, function () {
+    basic.showLeds(`
+        # # # # #
+        # # # # #
+        # # # # #
+        . . . . .
+        . . . . .
+        `)
+})
 input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
         . . . . .
